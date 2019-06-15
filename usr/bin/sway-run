@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# this script should be run within login shell, e.g. `bash -l -c sway-run` to
+# ensure that profile configs are loaded
+# details: https://github.com/swaywm/sway/issues/3109#issue-379500725
+
+# https://github.com/swaywm/sway/issues/595
+export _JAVA_AWT_WM_NONREPARENTING="1 idea"
+
+exec sway
